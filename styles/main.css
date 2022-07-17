@@ -1,0 +1,54 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+
+  margin: 40px auto 0;
+
+  width: 100%;
+  max-width: 1080px;
+}
+
+#app h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-family: 'Archivo Black';
+  font-weight: 400;
+  text-shadow: 2px 2px red;
+}
+
+#app p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  
+  width: 100%;
+  max-width: 650px;
+}
+
+.background-heart {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  opacity: 0.08;
+  background: url('../assets/heart.png');
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-heart-small {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  opacity: 0.1;
+  background: url('../assets/heart.png'), url('../assets/heart.png');
+  background-size: 500px;
+  background-position: left 30px, right 400px;
+  background-repeat: no-repeat;
+}

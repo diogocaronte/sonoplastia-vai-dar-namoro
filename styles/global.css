@@ -1,47 +1,28 @@
+@import url('./main.css');
+@import url('./sounds.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
-@font-face {
-  font-family: "GT Eesti Pro Display";
-  src: url("/fonts/GT-Eesti-Display-Regular.otf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "GT Eesti Pro Display";
-  src: url("/fonts/GT-Eesti-Display-Medium.otf");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
 :root {
-  --background: #f5f6fa;
-  --primary: #373D4F;
-  --secondary: #9098AE;
+  --text: #f5f6fa;
+  --red: #cb405c;
+  --red-dark: #8a0013;
 }
 
 body {
-  background: var(--background);
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle, var(--red) 0%, var(--red-dark) 100%);
 }
 
 body, button, textarea, input {
-  color: var(--primary);
-  font: 400 1rem "GT Eesti Pro Display", sans-serif;
+  color: var(--text);
+  font: 400 1rem "Lato", sans-serif;
 }
 
 a {
@@ -52,6 +33,7 @@ a {
 button {
   border: 0;
 }
+
 button:hover {
   cursor: pointer;
-}/*# sourceMappingURL=global.css.map */
+}
