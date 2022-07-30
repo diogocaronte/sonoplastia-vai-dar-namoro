@@ -1,0 +1,55 @@
+#shortcuts {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 16px;
+
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(138, 0, 19, 0.4);
+  box-shadow: 20px 20px 60px #931626, -20px -20px 60px #c71e34;
+
+  clip-path: circle(20px at 89% 90%);
+
+  transition: all 0.6s;
+}
+
+#shortcuts.active {
+  clip-path: circle(400px at center);
+}
+
+.shortcut__options {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px;
+
+  list-style: none;
+}
+
+.shortcut__options li {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.shortcut__options span {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #840013;
+}
+
+.shortcut__button {
+  border-radius: 4px;
+  padding: 4px 16px;
+  background: #700111;
+}
+
+.shortcut__button svg {
+  width: 30px;
+  height: 30px;
+}

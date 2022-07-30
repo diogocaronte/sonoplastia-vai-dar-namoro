@@ -25,6 +25,11 @@
   transition: background 0.4s;
 }
 
+.sounds button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .sounds button:hover {
   background: var(--red-dark);
 }
