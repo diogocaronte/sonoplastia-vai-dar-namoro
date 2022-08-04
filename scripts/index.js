@@ -13,7 +13,7 @@ sounds_shortcuts.set("s", 10);
 sounds_shortcuts.set("d", 11);
 sounds_shortcuts.set("f", 12);
 
-const assets_path = '../assets/sons/';
+const assets_path = './assets/sons/';
 const sounds = [
   {
     label: 'uuuuuuuuuuuuuuiiiii',
